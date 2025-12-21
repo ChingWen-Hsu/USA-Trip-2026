@@ -2,14 +2,14 @@
 <html lang="zh-TW">
 <head>
     <script>
-        // 設定你的專屬密碼（可以改成你喜歡的，例如：USA2025）
         var password = "2303019"; 
-        
-        var input = prompt("🔐 看西奶奶家：");
-      
-        if (input === null || input.toLowerCase() !== password) {
-          alert("密碼錯誤，無法進入！");
-          // 密碼錯了就導向 Google，不讓他看內容
+        var input = prompt("🔐 看西奶奶家 ");
+        if (input !== null && input.toLowerCase() === password) {
+          // 密碼正確，顯示網頁內容
+          document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.display = "block";
+          });
+        } else {
           window.location.href = "https://www.google.com"; 
         }
       </script>
