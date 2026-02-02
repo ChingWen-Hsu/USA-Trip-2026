@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <script>
-        var password = "2303019"; 
-        var input = prompt("🔐 看西奶奶家 ");
-        if (input !== null && input.toLowerCase() === password) {
-          // 密碼正確，顯示網頁內容
-          document.addEventListener("DOMContentLoaded", function() {
-            document.body.style.display = "block";
-          });
-        } else {
-          window.location.href = "https://www.google.com"; 
-        }
-      </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>美西 11 日壯遊：完整天天導航版</title>
+    <title>美國 11 日壯遊</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -35,12 +24,13 @@
 <body class="pb-12 text-slate-800">
 
     <header class="bg-slate-900 text-white py-10 text-center shadow-lg px-4">
-        <h1 class="text-3xl font-bold mb-2 tracking-wide">美西 11 日冒險之旅 🇺🇸</h1>
+        <h1 class="text-3xl font-bold mb-2 tracking-wide">美國 11 日冒險之旅 🇺🇸</h1>
         <p class="text-slate-400 text-sm">2/13 - 2/23 完整行程・導航版</p>
     </header>
 
     <div class="max-w-xl mx-auto mt-6 px-4 space-y-4">
 
+        <!--############################################## D1 ##############################################-->
         <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
             <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-50">
                 <div class="flex items-center space-x-4">
@@ -85,6 +75,7 @@
             </div>
         </div>
 
+        <!--############################################## D2 ##############################################-->
         <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
             <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-50">
                 <div class="flex items-center space-x-4">
@@ -130,6 +121,7 @@
             </div>
         </div>
 
+        <!--############################################## D3 ##############################################-->
         <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
             <div class="p-4 flex justify-between items-center cursor-pointer">
                 <div class="flex items-center space-x-4">
@@ -149,7 +141,7 @@
                     <div class="relative mb-6">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-yellow-500 shadow-sm"></div>
                         <div class="reserved cursor-pointer" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Gordon+Ramsay+Hell\'s+Kitchen+Las+Vegas', '_blank'); event.stopPropagation();">
-                            <p class="text-sm font-bold">11:00 ✅ 已預約：地獄廚房</p>
+                            <p class="text-sm font-bold">12:30 ✅ 已預約：地獄廚房</p>
                         </div>
                     </div>
                     <div class="relative">
@@ -165,201 +157,458 @@
             </div>
         </div>
 
-        <!-- D4 -->
+        <!--############################################## D4 ##############################################-->
         <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
             <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-50">
                 <div class="flex items-center space-x-4">
                     <div class="bg-indigo-600 text-white w-14 h-14 rounded-lg flex flex-col items-center justify-center font-bold">
-                        <span class="text-xs">2/16</span><span>一</span>
+                        <span class="text-xs opacity-80">2/16</span>
+                        <span class="text-lg">一</span>
                     </div>
                     <div>
-                        <h3 class="font-bold">Day 4: 大峽谷國家公園壯遊</h3>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Maswik+Lodge+Grand+Canyon" target="_blank" class="map-link text-xs" onclick="event.stopPropagation();"><i class="fa-solid fa-hotel mr-1"></i>Maswik Lodge</a>
+                        <h3 class="font-bold text-slate-800">Day 4: 大峽谷國家公園壯遊</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Maswik+Lodge+Grand+Canyon" target="_blank" class="text-indigo-500 text-xs font-medium hover:underline" onclick="event.stopPropagation();">
+                            <i class="fa-solid fa-hotel mr-1"></i>Maswik Lodge
+                        </a>
                     </div>
                 </div>
                 <i class="fa-solid fa-chevron-down text-slate-300 chevron transition-transform"></i>
             </div>
-            <div class="details-content">
-                <div class="relative pl-6">
+
+            <div class="details-content bg-slate-50/50">
+                <div class="relative pl-6 py-2">
                     <div class="timeline-line"></div>
+
                     <div class="relative mb-6">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-blue-500 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">08:00 出發大峽谷</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-car mr-1"></i>車程 4.5h + 休息 0.5h</p>
-                        <div class="flex flex-wrap gap-1 mt-2">
-                            <a href="#" class="tag"><i class="fa-solid fa-location-dot mr-1 text-red-500"></i>胡佛水壩</a>
-                            <a href="#" class="tag"><i class="fa-solid fa-route mr-1 text-slate-500"></i>金曼 (Kingman)</a>
-                        </div>
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-slate-400 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">07:00 拉斯維加斯出發</p>
+                        <p class="text-[11px] text-amber-600 bg-amber-50 self-start px-2 py-0.5 rounded border border-amber-100 mt-1 inline-block">
+                            <i class="fa-solid fa-clock mr-1"></i>維加斯時間 (PST)
+                        </p>
                     </div>
+
                     <div class="relative mb-6">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">14:00 抵達飯店/遊玩</p>
-                        <p class="text-xs text-slate-500 mt-1">辦理寄放行李，開始遊玩大峽谷園區。</p>
+                        <p class="text-sm font-bold text-slate-700">08:00 胡佛水壩快閃拍照</p>
+                        <p class="text-xs text-slate-500 mt-1">💡 走「大橋步道」俯瞰全景最快</p>
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            <a href="https://maps.app.goo.gl/53S88BWkEWr2CynY7" target="_blank" class="tag bg-white border border-slate-200 px-2 py-1 rounded text-xs flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-camera text-indigo-500"></i>胡佛水壩大橋
+                            </a>
+                        </div>
                     </div>
-                    <div class="relative">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-orange-400 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">18:00 晚餐饗宴</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-utensils mr-1"></i>El Tovar 享用精緻晚餐</p>
+
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">09:30 金曼小鎮 - 加油與午餐</p>
+                        <p class="text-xs text-slate-500 mt-1">🍔 建議 10:15 前離開以利後續行程</p>
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            <a href="https://maps.app.goo.gl/4qUi2nGA9unajity7" target="_blank" class="tag bg-white border border-slate-200 px-2 py-1 rounded text-xs flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-burger text-orange-500"></i>加油 / Culver’s
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-red-500 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">14:15 抵達大峽谷南緣</p>
+                        <div class="bg-red-50 text-red-600 text-[11px] px-2 py-1 rounded border border-red-100 mt-1 mb-2 inline-flex items-center">
+                            <i class="fa-solid fa-bolt-lightning mr-1"></i> 時差提醒：時間快 1 小時 (MST)
+                        </div>
+                        
+                        <div class="bg-white border border-slate-200 rounded-lg p-3 shadow-sm space-y-2">
+                            <p class="text-xs font-bold text-slate-600 border-b pb-1">📍 隱士之路自駕巡禮 (Hermit Road)</p>
+                            <ul class="text-xs text-slate-500 space-y-1.5">
+                                <li class="flex items-start gap-2"><span class="text-indigo-400 font-bold">1.</span> Powell Point (極致壯闊)</li>
+                                <li class="flex items-start gap-2"><span class="text-indigo-400 font-bold">2.</span> Mohave Point (俯瞰科羅拉多河)</li>
+                                <li class="flex items-start gap-2"><span class="text-indigo-400 font-bold">3.</span> Pima Point (聽谷底水流聲)</li>
+                                <li class="flex items-start gap-2"><span class="text-indigo-400 font-bold">4.</span> Hermits Rest (復古石造小屋)</li>
+                                <li class="flex items-start gap-2 text-orange-600 font-bold"><i class="fa-solid fa-sun mr-1"></i> Hopi Point 看日落 (約18:11)</li>
+                            </ul>
+                            <a href="https://maps.app.goo.gl/h8FHnRK7WJyYYK6U8" target="_blank" class="mt-2 w-full bg-slate-100 text-slate-600 text-[11px] py-1.5 rounded flex justify-center items-center gap-1 hover:bg-slate-200 transition-colors">
+                                <i class="fa-solid fa-location-arrow"></i> 開啟自駕拍照導航
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative mb-2">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-yellow-500 shadow-sm"></div>
+                        <div class="reserved bg-blue-50 border border-blue-100 rounded-lg p-3 cursor-pointer hover:bg-blue-100 transition-colors" onclick="window.open('https://www.google.com/maps/place/El+Tovar+Dining+Room/@36.0573917,-112.1376139,17z/data=!3m1!4b1!4m6!3m5!1s0x873310bdcac3cc73:0x84644c71c331fdcb!8m2!3d36.0573917!4d-112.1376139!16s%2Fg%2F12qg5sv5b?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D', '_blank'); event.stopPropagation();">
+                            <p class="text-sm font-bold text-blue-800 flex items-center gap-2">
+                                <i class="fa-solid fa-utensils"></i> 18:45 El Tovar 精緻晚餐
+                            </p>
+                            <p class="text-[10px] text-blue-600/80 mt-1">※ 歷史地標餐廳，建議準時抵達</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--############################################## D5 ##############################################-->
         <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
-            <div class="p-4 flex justify-between items-center cursor-pointer">
+            <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-50 transition-colors">
                 <div class="flex items-center space-x-4">
                     <div class="bg-indigo-600 text-white w-14 h-14 rounded-lg flex flex-col items-center justify-center font-bold">
-                        <span class="text-xs">2/17</span><span>二</span>
+                        <span class="text-xs opacity-80">2/17</span>
+                        <span class="text-lg">二</span>
                     </div>
                     <div>
-                        <h3 class="font-bold">Day 5: 佩吉市 - 羚羊谷驚艷</h3>
-                        <a href="https://www.google.com/maps/search/?api=1&query=320+Birch+St,+Page,+AZ+86040" target="_blank" class="map-link text-xs" onclick="event.stopPropagation();"><i class="fa-solid fa-house-user mr-1"></i>Airbnb: 320 Birch St</a>
+                        <h3 class="font-bold text-slate-800">Day 5: 佩吉市 - 羚羊谷驚艷</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Best+Western+Plus+Bryce+Canyon+Grand+Hotel" target="_blank" class="text-indigo-500 text-xs font-medium hover:underline" onclick="event.stopPropagation();">
+                            <i class="fa-solid fa-house-user mr-1"></i>Best Western Plus
+                        </a>
                     </div>
                 </div>
                 <i class="fa-solid fa-chevron-down text-slate-300 chevron transition-transform"></i>
             </div>
-            <div class="details-content">
-                <div class="relative pl-6">
+            
+            <div class="details-content bg-slate-50/50">
+                <div class="relative pl-6 py-2">
                     <div class="timeline-line"></div>
+                    
                     <div class="relative mb-6">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-yellow-400 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">07:00 大峽谷日出</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-car mr-1"></i>車程 2.5h + 休息 0.5h 往佩吉市</p>
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-orange-400 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">06:30 大峽谷日出 & 出發</p>
+                        <div class="bg-orange-50 text-orange-700 text-[11px] px-2 py-1 rounded border border-orange-100 mt-1 inline-flex items-center">
+                            <i class="fa-solid fa-sun mr-1"></i> 預估 07:13 日出 (建議 06:50 抵達)
+                        </div>
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            <a href="https://maps.app.goo.gl/7ynWcwi1kbnjWUGW9" target="_blank" class="tag bg-white border border-slate-200 px-2 py-1 rounded text-xs flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-camera text-orange-500"></i> Mather Point
+                            </a>
+                        </div>
+                        <p class="text-[11px] text-slate-400 mt-2 ml-1"><i class="fa-solid fa-car mr-1"></i> 跨州長征 2.5h 往佩吉市 (Page)</p>
                     </div>
+
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">10:00 佩吉市首站：馬蹄灣</p>
+                        <p class="text-xs text-slate-500 mt-1">💡 進入市區前必經點，步行至觀景台約 15-20 分鐘</p>
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            <a href="https://maps.google.com/?cid=4999963746690340610&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="tag bg-white border border-slate-200 px-2 py-1 rounded text-xs flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-location-dot text-red-500"></i> 馬蹄灣 Horseshoe Bend
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">11:00 網美加油站快拍</p>
+                        <p class="text-xs text-slate-500 mt-1">📸 Shell 經典紅岩壁背景，非常震撼</p>
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            <a href="https://maps.app.goo.gl/quCSqkN3jnunXfeC6" target="_blank" class="tag bg-white border border-slate-200 px-2 py-1 rounded text-xs flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-gas-pump text-blue-500"></i> Shell 拍照點
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="relative mb-6">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-yellow-500 shadow-sm"></div>
-                        <div class="reserved cursor-pointer" onclick="window.open('https://maps.app.goo.gl/vD4SSDNdogDRiNDs6', '_blank'); event.stopPropagation();">
-                            <p class="text-sm font-bold">12:00 ✅ 已預約：下羚羊谷 Tour</p>
+                        <div class="reserved bg-amber-50 border border-amber-200 rounded-lg p-3 cursor-pointer hover:bg-amber-100 transition-colors" onclick="window.open('https://maps.google.com/?cid=579816711696212557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ', '_blank'); event.stopPropagation();">
+                            <p class="text-sm font-bold text-amber-900 flex items-center gap-2">
+                                <i class="fa-solid fa-ticket"></i> 12:00 ✅ 已預約：Ken's Tours 下羚羊谷
+                            </p>
+                            <div class="mt-2 space-y-1">
+                                <p class="text-[11px] text-amber-800 flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-exclamation w-3"></i> 需提前 30 分鐘 (11:30) 報到
+                                </p>
+                                <p class="text-[11px] text-amber-700/80 flex items-center gap-1">
+                                    <i class="fa-solid fa-ban w-3"></i> 全程禁帶包包、登山杖、自拍棒
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                     <div class="relative mb-6">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">14:00 佩吉市巡禮</p>
+                        <p class="text-sm font-bold text-slate-700">13:30 市區採買 & 休息午餐</p>
                         <div class="flex flex-wrap gap-1 mt-2">
-                            <a href="#" class="tag">馬蹄灣</a>
-                            <a href="#" class="tag">Lake Powell</a>
-                            <a href="#" class="tag">Shell 加油站拍照</a>
+                            <a href="https://maps.google.com/?cid=1711849323075154669&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="tag bg-white border border-slate-200 px-2 py-1 rounded text-xs flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-cart-shopping text-blue-600"></i> Walmart 補給
+                            </a>
                         </div>
                     </div>
+
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">14:30 Wahweap Overlook</p>
+                        <p class="text-xs text-slate-500 mt-1">🌊 離開 Page 前最後一瞥，俯瞰鮑威爾湖</p>
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            <a href="https://maps.google.com/?cid=17682713296509726181&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="tag bg-white border border-slate-200 px-2 py-1 rounded text-xs flex items-center gap-1 shadow-sm">
+                                <i class="fa-solid fa-water text-cyan-500"></i> 鮑威爾湖全景點
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="relative">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-orange-400 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">18:00 溫馨晚餐</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-house mr-1"></i>Airbnb 自煮或休息</p>
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-slate-400 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">15:00 前往布萊斯峽谷 (Bryce)</p>
+                        <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-car mr-1"></i> 車程約 2.5h - 3h，預計 18:00 抵達住宿</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--############################################## D6 ##############################################-->
         <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
-            <div class="p-4 flex justify-between items-center cursor-pointer">
+            <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-50 transition-colors">
                 <div class="flex items-center space-x-4">
                     <div class="bg-indigo-600 text-white w-14 h-14 rounded-lg flex flex-col items-center justify-center font-bold">
-                        <span class="text-xs">2/18</span><span>三</span>
+                        <span class="text-xs opacity-80">2/18</span>
+                        <span class="text-lg">三</span>
                     </div>
                     <div>
-                        <h3 class="font-bold">Day 6: 布萊斯峽谷石林</h3>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Best+Western+Plus+Bryce+Canyon+Grand+Hotel" target="_blank" class="map-link text-xs" onclick="event.stopPropagation();"><i class="fa-solid fa-hotel mr-1"></i>Best Western Plus</a>
+                        <h3 class="font-bold text-slate-800">Day 6: 布萊斯峽谷石林</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Best+Western+Plus+Bryce+Canyon+Grand+Hotel" target="_blank" class="text-indigo-500 text-xs font-medium hover:underline" onclick="event.stopPropagation();">
+                            <i class="fa-solid fa-hotel mr-1"></i>Best Western Plus
+                        </a>
                     </div>
                 </div>
                 <i class="fa-solid fa-chevron-down text-slate-300 chevron transition-transform"></i>
             </div>
-            <div class="details-content">
-                <div class="relative pl-6">
+
+            <div class="details-content bg-slate-50/50">
+                <div class="relative pl-6 py-2">
                     <div class="timeline-line"></div>
-                    <div class="relative mb-6">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-blue-500 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">08:00 前往布萊斯峽谷</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-car mr-1"></i>車程 2.5h + 休息 0.5h</p>
-                    </div>
+                    
                     <div class="relative mb-6">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">13:00 遊玩布萊斯</p>
-                        <p class="text-xs text-slate-500 mt-1">探索壯觀的石林 (Hoodoos) 景觀。</p>
+                        <p class="text-sm font-bold text-slate-700">08:00 Queen's/Navajo Loop 健行</p>
+                        <div class="bg-indigo-50 text-indigo-700 text-[11px] px-2 py-1 rounded border border-indigo-100 mt-1 inline-flex items-center">
+                            <i class="fa-solid fa-hourglass-half mr-1"></i> 深入石林 (Hoodoos)，總時長約 2-3h
+                        </div>
+                        <div class="flex flex-wrap gap-1 mt-2">
+                            <a href="https://www.google.com/maps/dir/37.6312659,-112.1644797/Bryce+Canyon+National+Park+Sunrise+Point,+Rim+Trail,+Bryce+Canyon+City,+UT+84764%E7%BE%8E%E5%9C%8B/Queens+Garden+Benchmark,+JRGQ%2B88,+Bryce+Canyon+City,+UT+84764%E7%BE%8E%E5%9C%8B/Queens+Garden+Trail,+Utah+84764%E7%BE%8E%E5%9C%8B/Sunset+Point,+Sunset+Point+Overlook,+Bryce+Canyon+City,+UT+84764%E7%BE%8E%E5%9C%8B/Bryce+Canyon+National+Park+Sunrise+Point,+Rim+Trail,+Bryce+Canyon+City,+UT+84764%E7%BE%8E%E5%9C%8B/@37.6248612,-112.172678,15z/data=!3m1!4b1!4m33!4m32!1m0!1m5!1m1!1s0x87356920efa1cecd:0xce9c5d96bcdcb646!2m2!1d-112.1629339!2d37.6283489!1m5!1m1!1s0x87356988ae4bac51:0x92ab53b0c470a43b!2m2!1d-112.1617242!2d37.6258599!1m5!1m1!1s0x87356924799b9299:0xaa9cb9e3a4908130!2m2!1d-112.1606402!2d37.6238046!1m5!1m1!1s0x873569ffa1fc6c75:0x22fe8b5e23d68269!2m2!1d-112.166005!2d37.6226699!1m5!1m1!1s0x87356920efa1cecd:0xce9c5d96bcdcb646!2m2!1d-112.1629339!2d37.6283489!3e2?authuser=0&entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="tag bg-white border border-slate-200 px-2 py-1 rounded text-xs flex items-center gap-1 shadow-sm" onclick="event.stopPropagation();">
+                                <i class="fa-solid fa-person-hiking text-green-600"></i> 開始健行導航
+                            </a>
+                        </div>
                     </div>
+
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-slate-400 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">11:00 回飯店吃飯休息</p>
+                        <p class="text-xs text-slate-500 mt-1">體力補給，避開中午最強紫外線</p>
+                    </div>
+
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">13:30 遊玩布萊斯精華景點</p>
+                        
+                        <div class="bg-white border border-slate-200 rounded-lg p-3 shadow-sm mt-2 space-y-2">
+                            <p class="text-xs font-bold text-slate-600 border-b pb-1">🚗 自駕觀景點清單</p>
+                            <ul class="text-xs text-slate-500 space-y-1.5">
+                                <li class="flex justify-between items-center">
+                                    <span>【第一站】Rainbow Point (最高點)</span>
+                                    <span class="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded">20 min</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>【第二站】Natural Bridge (石拱橋)</span>
+                                    <span class="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded">15 min</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>【第三站】Bryce Point (全景震撼)</span>
+                                    <span class="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded">20 min</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>【第四站】Inspiration Point (最密集)</span>
+                                    <span class="text-[10px] bg-slate-100 px-1.5 py-0.5 rounded">15 min</span>
+                                </li>
+                            </ul>
+                            <a href="https://www.google.com/maps/dir/Best+Western+Plus+Bryce+Canyon+Grand+Hotel,+30+N+100+E,+Bryce+Canyon+City,+UT+84764%E7%BE%8E%E5%9C%8B/Rainbow+Point,+%E7%8C%B6%E4%BB%96%E7%BE%8E%E5%9C%8B/Bryce+Natural+Bridge,+Bryce+Canyon+National+Park,+UT,+%E7%BE%8E%E5%9C%8B/Bryce+Point,+Bryce+Pt+Rd,+Tropic,+UT+84776%E7%BE%8E%E5%9C%8B/Inspiration+Point,+%E7%8C%B6%E4%BB%96+84764%E7%BE%8E%E5%9C%8B/37%C2%B037'52.6%22N+112%C2%B009'52.1%22W/@37.6004095,-112.1854922,14z/data=!4m36!4m35!1m5!1m1!1s0x87356602e881cef7:0x2890413e3c2b030d!2m2!1d-112.152394!2d37.6747579!1m5!1m1!1s0x87353fe04c817351:0x9a2b25a3b01e2dce!2m2!1d-112.2407148!2d37.4759389!1m5!1m1!1s0x873541cae572b02b:0x2fc875586526adfa!2m2!1d-112.2600503!2d37.5321437!1m5!1m1!1s0x87356945a20b0d49:0x24190580d4afdb7c!2m2!1d-112.1565495!2d37.6043935!1m5!1m1!1s0x87356915db96ea6d:0x241b057d0ea41729!2m2!1d-112.1688058!2d37.6133163!1m3!2m2!1d-112.1644722!2d37.6312778!3e0?authuser=0&entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="mt-2 w-full bg-slate-100 text-slate-600 text-[11px] py-1.5 rounded flex justify-center items-center gap-1 hover:bg-slate-200 transition-colors" onclick="event.stopPropagation();">
+                                <i class="fa-solid fa-location-arrow"></i> 開啟觀景點導航
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="relative">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-orange-400 shadow-sm"></div>
                         <p class="text-sm font-bold text-slate-700">18:00 飯店晚餐</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-utensils mr-1"></i>The Lodge at Bryce Canyon</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
-            <div class="p-4 flex justify-between items-center cursor-pointer">
-                <div class="flex items-center space-x-4">
-                    <div class="bg-indigo-600 text-white w-14 h-14 rounded-lg flex flex-col items-center justify-center font-bold">
-                        <span class="text-xs">2/19</span><span>四</span>
-                    </div>
-                    <div>
-                        <h3 class="font-bold">Day 7: 錫安國家公園健行</h3>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Cliffrose+Springdale,+Curio+Collection+by+Hilton" target="_blank" class="map-link text-xs" onclick="event.stopPropagation();"><i class="fa-solid fa-hotel mr-1"></i>Cliffrose Zion</a>
-                    </div>
-                </div>
-                <i class="fa-solid fa-chevron-down text-slate-300 chevron transition-transform"></i>
-            </div>
-            <div class="details-content">
-                <div class="relative pl-6">
-                    <div class="timeline-line"></div>
-                    <div class="relative mb-6">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-yellow-400 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">07:00 看日出與出發</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-car mr-1"></i>車程 2.5h + 休息 0.5h 往錫安</p>
-                    </div>
-                    <div class="relative mb-6">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">13:00 遊玩錫安</p>
-                        <p class="text-xs text-slate-500 mt-1">欣賞巨石峽谷，進行壯麗的健行體驗。</p>
-                    </div>
-                    <div class="relative">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-orange-400 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">18:00 晚餐時間</p>
-                        <div class="flex flex-wrap gap-1 mt-2">
-                            <a href="#" class="tag">墨西哥菜</a>
-                            <a href="#" class="tag">義式薄餅</a>
+                        <div class="mt-1 flex items-center gap-1 text-xs text-orange-600">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span class="font-medium">The Lodge at Bryce Canyon</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--############################################## D7 ##############################################-->
         <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
-            <div class="p-4 flex justify-between items-center cursor-pointer">
+            <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-50 transition-colors">
                 <div class="flex items-center space-x-4">
                     <div class="bg-indigo-600 text-white w-14 h-14 rounded-lg flex flex-col items-center justify-center font-bold">
-                        <span class="text-xs">2/20</span><span>五</span>
+                        <span class="text-xs opacity-80">2/19</span>
+                        <span class="text-lg">四</span>
                     </div>
                     <div>
-                        <h3 class="font-bold">Day 8: 重返拉斯維加斯</h3>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Virgin+Hotels+Las+Vegas" target="_blank" class="map-link text-xs" onclick="event.stopPropagation();"><i class="fa-solid fa-hotel mr-1"></i>Virgin Hotels LV</a>
+                        <h3 class="font-bold text-slate-800">Day 7: 錫安國家公園健行</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Cliffrose+Springdale,+Curio+Collection+by+Hilton" target="_blank" class="text-indigo-500 text-xs font-medium hover:underline" onclick="event.stopPropagation();">
+                            <i class="fa-solid fa-hotel mr-1"></i>Cliffrose Zion
+                        </a>
                     </div>
                 </div>
                 <i class="fa-solid fa-chevron-down text-slate-300 chevron transition-transform"></i>
             </div>
-            <div class="details-content">
-                <div class="relative pl-6">
+
+            <div class="details-content bg-slate-50/50">
+                <div class="relative pl-6 py-2">
                     <div class="timeline-line"></div>
+                    
                     <div class="relative mb-6">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-yellow-400 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">07:00 看日出與回程</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-car mr-1"></i>錫安開回 LV (4.5h + 1h 休息)</p>
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-slate-400 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">08:00 出發前往錫安 (Zion)</p>
+                        <p class="text-xs text-slate-500 mt-1">
+                            <i class="fa-solid fa-car mr-1 text-slate-400"></i> 車程 2.5h + 休息 0.5h
+                        </p>
+                        <p class="text-[11px] text-amber-600 bg-amber-50 px-2 py-0.5 rounded border border-amber-100 mt-2 inline-block">
+                            💡 進入公園前會經過著名的長隧道
+                        </p>
                     </div>
+
                     <div class="relative mb-6">
-                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-red-400 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">15:00 團隊分工</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-couch mr-1 text-pink-500"></i> 媽咪們：飯店休息</p>
-                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-car-side mr-1 text-blue-500"></i>小女們：機場還車</p>
-                    </div>
-                    <div class="relative">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-500 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">19:00 晚上活動</p>
-                        <p class="text-xs text-slate-500 mt-1">吃晚餐、看表演，享受最後一晚 LV。</p>
+                        <p class="text-sm font-bold text-slate-700">11:00 錫安雙健行體驗</p>
+                        
+                        <div class="mt-3 space-y-3">
+                            <div class="bg-white border border-slate-200 rounded-lg p-3 shadow-sm">
+                                <p class="text-xs font-bold text-slate-700 flex items-center justify-between">
+                                    <span>🥾 Canyon Overlook Trail</span>
+                                    <span class="text-[10px] text-indigo-500 bg-indigo-50 px-1.5 py-0.5 rounded">約 1hr</span>
+                                </p>
+                                <p class="text-[11px] text-red-600 font-bold mt-1.5 bg-red-50 p-1.5 rounded border border-red-100">
+                                    ⚠️ 重要：出隧道後「馬上」右轉停車！車位極少，需耐心等候。
+                                </p>
+                                <div class="mt-2">
+                                    <a href="https://maps.app.goo.gl/zN654UGh9fXCbzzq8" target="_blank" class="text-[10px] text-slate-500 bg-slate-100 px-2 py-1 rounded hover:bg-slate-200" onclick="event.stopPropagation();">
+                                        <i class="fa-solid fa-location-arrow mr-1"></i>導航至步道口停車
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-slate-200 rounded-lg p-3 shadow-sm">
+                                <p class="text-xs font-bold text-slate-700 flex items-center justify-between">
+                                    <span>🚶🏻‍♀️ Pa'rus Trail (平坦好拍)</span>
+                                    <span class="text-[10px] text-indigo-500 bg-indigo-50 px-1.5 py-0.5 rounded">約 1hr</span>
+                                </p>
+                                <p class="text-[11px] text-slate-500 mt-1">沿著維琴河漫步，欣賞壯麗巨石峽谷。</p>
+                                <div class="mt-2 flex gap-1">
+                                    <a href="https://maps.app.goo.gl/r7Mgpv2Nf3ckN87U7" target="_blank" class="text-[10px] text-slate-500 bg-slate-100 px-2 py-1 rounded hover:bg-slate-200" onclick="event.stopPropagation();">
+                                        <i class="fa-solid fa-map mr-1"></i>步道
+                                    </a>
+                                    <a href="https://maps.app.goo.gl/vo7LQXvxfZKtcVH67" target="_blank" class="text-[10px] text-blue-600 bg-blue-50 px-2 py-1 rounded border border-blue-100 hover:bg-blue-100" onclick="event.stopPropagation();">
+                                        <i class="fa-solid fa-square-p mr-1"></i>停車點 (遊客中心)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative pb-2">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-orange-400 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">18:00 晚餐選項 (Springdale)</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <a href="https://maps.app.goo.gl/rfwbUwipTruHjXHx7" target="_blank" class="tag bg-white border border-slate-200 px-3 py-1.5 rounded-full text-xs flex items-center gap-1 shadow-sm hover:bg-slate-50" onclick="event.stopPropagation();">
+                                <i class="fa-solid fa-pepper-hot text-red-500"></i> 墨西哥菜
+                            </a>
+                            <a href="https://maps.app.goo.gl/uf4saZLRzZDzRizH6" target="_blank" class="tag bg-white border border-slate-200 px-3 py-1.5 rounded-full text-xs flex items-center gap-1 shadow-sm hover:bg-slate-50" onclick="event.stopPropagation();">
+                                <i class="fa-solid fa-pizza-slice text-orange-500"></i> 義式薄餅/麵
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- D9 -->
+        <!--############################################## D8 ##############################################-->
+        <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
+            <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-50 transition-colors">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-indigo-600 text-white w-14 h-14 rounded-lg flex flex-col items-center justify-center font-bold">
+                        <span class="text-xs opacity-80">2/20</span>
+                        <span class="text-lg">五</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800">Day 8: 錫安與拉斯維加斯</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Virgin+Hotels+Las+Vegas" target="_blank" class="text-indigo-500 text-xs font-medium hover:underline" onclick="event.stopPropagation();">
+                            <i class="fa-solid fa-hotel mr-1"></i>Virgin Hotels LV
+                        </a>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-down text-slate-300 chevron transition-transform"></i>
+            </div>
+            
+            <div class="details-content bg-slate-50/50">
+                <div class="relative pl-6 py-2">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-green-500 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">08:00 錫安經典步道巡禮</p>
+                        <div class="mt-3 space-y-2">
+                            <div class="bg-white border border-slate-200 rounded-lg p-3 shadow-sm flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs font-bold text-slate-700">🥾 Emerald Pool Trail</p>
+                                    <p class="text-[10px] text-slate-500">翡翠池：清幽的池畔與小瀑布</p>
+                                </div>
+                                <a href="https://maps.app.goo.gl/UPYkAnTq7XQSVxdJ7" target="_blank" class="p-2 text-indigo-500 hover:bg-indigo-50 rounded-full transition-colors" onclick="event.stopPropagation();">
+                                    <i class="fa-solid fa-location-arrow"></i>
+                                </a>
+                            </div>
+                            <div class="bg-white border border-slate-200 rounded-lg p-3 shadow-sm flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs font-bold text-slate-700">🚶🏼‍♂️ Riverside Walk</p>
+                                    <p class="text-[10px] text-slate-500">河濱步道：The Narrows 的入口前哨</p>
+                                </div>
+                                <a href="https://maps.app.goo.gl/Bx3S8BF64fog377JA" target="_blank" class="p-2 text-indigo-500 hover:bg-indigo-50 rounded-full transition-colors" onclick="event.stopPropagation();">
+                                    <i class="fa-solid fa-location-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative mb-6">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-red-400 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">13:00 告別大自然，啟程回航</p>
+                        <p class="text-xs text-slate-500 mt-1">
+                            <i class="fa-solid fa-car mr-1 text-slate-400"></i> 車程 4.5h + 休息補給 1.5h
+                        </p>
+                        
+                        <div class="mt-3 flex items-center gap-2">
+                            <a href="https://maps.app.goo.gl/bAyb2vCsfn7aLaxb7" target="_blank" class="tag bg-orange-50 border border-orange-200 px-3 py-1.5 rounded-lg text-xs flex items-center gap-2 shadow-sm hover:bg-orange-100 transition-colors" onclick="event.stopPropagation();">
+                                <span class="text-lg">🌀</span>
+                                <div>
+                                    <p class="font-bold text-orange-800">必買：好吃肉桂捲</p>
+                                    <p class="text-[9px] text-orange-600">最佳中途休息點與能量補給</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-indigo-600 shadow-sm"></div>
+                        <p class="text-sm font-bold text-slate-700">18:00 抵達拉斯維加斯</p>
+                        <div class="bg-blue-50 text-blue-600 text-[11px] px-2 py-1 rounded border border-blue-100 mt-1 mb-2 inline-flex items-center">
+                            <i class="fa-solid fa-rotate-left mr-1"></i> 時差提醒：時間撥回 1 小時 (多出一小時可用!)
+                        </div>
+                        <div class="bg-white border border-slate-200 rounded-lg p-3 shadow-sm">
+                            <ul class="text-xs text-slate-500 space-y-2">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-key text-slate-400 w-4"></i> 機場還車手續
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-utensils text-slate-400 w-4"></i> 豪華慶功晚餐
+                                </li>
+                                <li class="flex items-center gap-2 font-medium text-indigo-600">
+                                    <i class="fa-solid fa-clover w-4"></i> 享受賭城最後一晚的奢華
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--############################################## D9 ##############################################-->
         <div class="day-card bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden" onclick="this.classList.toggle('active')">
             <div class="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-50">
                 <div class="flex items-center space-x-4">
@@ -398,8 +647,7 @@
                     </div>
                     <div class="relative mb-6">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-slate-300 shadow-sm"></div>
-                        <p class="text-sm font-bold text-slate-700">12:30 - 15:42 機場移動</p>
-                        <p class="text-xs text-slate-500 mt-1">飯店拿行李，13:30 抵達機場，準備搭機。</p>
+                        <p class="text-sm font-bold text-slate-700">12:30 飯店拿行李，13:30 抵達機場，準備搭機。</p>
                     </div>
                     <div class="relative">
                         <div class="absolute -left-[24px] top-1.5 w-4 h-4 rounded-full border-4 border-white bg-yellow-500 shadow-sm"></div>
@@ -445,7 +693,7 @@
     </div>
 
     <footer class="mt-12 text-center text-slate-400 text-xs">
-        <p>© 2025 美西之旅行程表 | 祝您旅途平安愉快</p>
+        <p>© 2026 美西之旅行程表 | 祝您旅途平安愉快</p>
     </footer>
 
 </body>
